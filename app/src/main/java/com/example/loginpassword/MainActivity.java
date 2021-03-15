@@ -18,8 +18,9 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 
 public class MainActivity extends AppCompatActivity {
-    EditText editTextLogin,editTextPassword;
-    Button btnLog,btnReg;
+    private EditText editTextLogin,editTextPassword;
+    private Button btnLog,btnReg;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,10 +30,10 @@ public class MainActivity extends AppCompatActivity {
         login();
     }
     private void init(){
-        btnLog = findViewById(R.id.btnLog);
-        btnReg = findViewById(R.id.btnPass);
-        editTextLogin = findViewById(R.id.editTextLogin);
-        editTextPassword = findViewById(R.id.editTextPassword);
+        btnLog = findViewById(R.id.btn_log);
+        btnReg = findViewById(R.id.btn_pass);
+        editTextLogin = findViewById(R.id.edit_text_login);
+        editTextPassword = findViewById(R.id.edit_text_password);
     }
     private void registration(){
         btnReg.setOnClickListener(new View.OnClickListener() {
